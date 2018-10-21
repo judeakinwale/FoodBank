@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
+    <title>Register | Foodbank</title> 
+
+   
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/register.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/alert.css" rel="stylesheet">
+
+
+
+  </head>
+
+  <body>
+
+   
+
+    <div class="container user-login">
+     
+    <!-- echo out the system feedback (error and success messages) -->
+   
+      
+        <div class="container">
+           
+            <div class="main">
+                           <div class="row">
+               <div class="logo-header">  
+                 <a class="login-Foodbank-icon" href="index-2.html"><img src="images/logo.png" width=120></a> 
+              </div>
+              </div>
+              
+                <div class="social-icons disabled">
+                 <div class="row">
+                  <a class='register-retailer' href="register/retailer.html">
+                    SignUp as Retailer
+                  </a>
+                 </div>   
+                <div class="clear"> </div>  
+             </div>
+             <div class="or-setup"> OR </div>
+              <div class="social-icons">
+                 <div class="row">
+                    <h3 class="register-user">SignUp as a  User (below)</h3>
+                 </div>   
+                <div class="clear"> </div>  
+             </div>
+            <div class="row ">
+            <form role="form" method="post" action="http://Foodbank.com/register/register_action" data-delay="3500" class="register" data-toggle="validator">   
+               <div class="form-group">
+                
+                    <div class="form-inline row">
+                      <div class="form-group col-sm-6 has-feedback"> 
+                  
+                       <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name" required data-error="First Name is required">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="form-group col-sm-6 has-feedback">
+                      
+                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name" required data-error="Last Name is required">
+                         <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="clear"> </div>
+                    </div>
+               </div>
+               <div class="form-group email has-feedback">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="You@youremail.com" required data-error="Email address is not valid">
+                    <div class="help-block with-errors"></div>
+               </div>
+               <div class="form-group has-feedback">
+                    <input type="number" class="form-control"  data-minlength="11" name="phone" id="phone" placeholder="Phone Number" required data-error=" Phone number is not valid">
+                    <div class="help-block with-errors"></div>
+               </div>
+                <div class="form-group ">
+                   <div class="form-inline row">
+                    <div class="form-group col-sm-6 has-feedback">  
+                     <input type="password" data-minlength="6" class="form-control" name="password" id="inputPassword" placeholder="Password" required>
+                     <div class="help-block with-errors"> Minimum of 6 characters</div>
+                    </div>
+                    <div class="form-group col-sm-6 has-feedback">
+                      <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Passwords don't match!" placeholder="Confirm" required>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                   </div>
+                    <div class="clear"> </div>
+               </div>
+               <h3>By creating an account, you agree to our <span class="term"><a href="#">Terms & Conditions</a></span></h3>
+               <div class="submit">
+              
+                  <button type="submit" class="btn btn-success btn-account">Create Account</button>
+               </div>
+               <div class="clear"> </div>
+            </form>
+            </div>
+            <!-----//end-main---->
+            <div class="or-setup"> OR</div>
+             <div class="social-icons">
+                 <div class="row">
+                  <a href="https://www.facebook.com/v2.4/dialog/oauth?client_id=425903674444308&amp;state=46645f1f362bfcebe48ba6fda9d35810&amp;response_type=code&amp;sdk=php-sdk-5.5.0&amp;redirect_uri=http%3A%2F%2Fwww.Foodbank.com%2Fregister&amp;scope=email%2Cuser_location%2Cpages_messaging_phone_number">
+                    <ul class='facebook'>
+                      <i class="fb"> </i>
+                      Register with Facebook 
+                      <div class='clear'> </div>
+                    </ul>
+                  </a>
+                 </div>   
+                <div class="clear"> </div>  
+             </div>
+        
+            </div>
+       
+         <div class="form-footer"> 
+          <span style="text-align:center;display:block; margin-top: 10px;" >Have have an Account?<a href="login.html"> Login</a> </span>
+        </div>
+        
+       </div>
+    </div>
+     
+     
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/Foodbank.js"></script>
+  <script src="js/effect.js"></script>
+<script src="js/wizard.js"></script>
+ <script src="js/validator.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+
+ 
+  </body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpbh'},{'server':'a2plvcpnl107243'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='../img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
